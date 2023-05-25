@@ -51,13 +51,14 @@
 
 // var prenom = "alexis";
 // var nom = "simoes";
-var prenom = prompt("quelle et votre prenom ?", "alexis");
-console.log(prenom);
-document.write(prenom);
-alert(prenom);
+// var prenom = prompt("quelle et votre prenom ?", "alexis");
+// console.log(prenom);
+// document.write(prenom);
+// alert(prenom);
 
 // Differents types de fonctions : (function)
 //  1 - une fonction avec au moins un parametre sans valeur de retour
 //  2 - une fonction avec au moins un parametre avec une valeur de retour
 //  3 - une fonction sans  parametre avec une valeur de retour
 //  4 - une fonction sans  parametre sans valeur de retour
+
