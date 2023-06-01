@@ -22,6 +22,10 @@ for (var i = 0; i < couleurs.length; i++) {
 // AU LIEU DE MODIFIER LE TABLEAU ON EN CREE UN AUTRE IDENTIQUE
 
 //Ajouter à la fin du tableau
+
+// AU LIEU DE CREER UN NOUVEAU TABLEAU ON MODIFIE LE CONTENU DU TABLEAU INITIAL 
+// (ICI AJOUTER UN ELEMENT A LA FIN DU TABLEAU A L'AIDE DE LA FONCTION PUSH QUI PREND 
+// EN PARAMETRE UN ELEMENT ET QUI RETOURNE LA NOUVELLE TAILLE DU TABLEAU)
 var newLength = fruits.push('Orange');
 // ["Apple", "Banana", "Orange"]
 
@@ -37,11 +41,11 @@ var first = fruits.shift(); // supprime Apple (au début)
 var newLength = fruits.unshift('Strawberry') // ajoute au début
 // ["Strawberry", "Banana"];
 
-//Trouver l'index d'un élément dans le tableau
 fruits.push('Mango');
 // ["Strawberry", "Banana", "Mango"]
 
 // Créer un tableau
+//Trouver l'index d'un élément dans le tableau
 var pos = fruits.indexOf('Banana');
 // 1
 

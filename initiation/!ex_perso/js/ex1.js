@@ -97,14 +97,72 @@
 //     console.log(couleurs[i]);
 // }
 
-var couleurs = ['rouge', 'vert', 'bleu'];
-for (var w = 0; w < couleurs.length; w++) {
-    console.log(couleurs[w]);
-    document.write("<p>" + couleurs[w] + "</p>");
-}
+// var couleurs = ['rouge', 'vert', 'bleu'];
+// for (var w = 0; w < couleurs.length; w++) {
+//     console.log(couleurs[w]);
+//     document.write("<p>" + couleurs[w] + "</p>");
+// }
 
-//Affichage à partir du dernier élément
-for (var w = 2; w >= 0; w--) {
-    console.log(couleurs[w]);
-    document.write("<p>" + couleurs[w] + "</p>");
-}
+// //Affichage à partir du dernier élément
+// for (var w = 2; w >= 0; w--) {
+//     console.log(couleurs[w]);
+//     document.write("<p>" + couleurs[w] + "</p>");
+// }
+
+// var fruits =["Apple", "Banana"];
+// console.log(fruits);
+// //Ajouter à la fin du tableau
+// var newLength = fruits.push('Orange', 'Citron');
+
+// // AU LIEU DE MODIFIER LE TABLEAU ON EN CREE UN AUTRE IDENTIQUE
+// console.log('Tableau fruits initial : ' + fruits);
+// //Ajouter à la fin du tableau
+// var newLength = fruits.push('Orange', 'Citron');
+
+// console.log('Tableau fruits ajout des deux éléments : ' + fruits);
+// // console.log(typeof fruits);
+// // console.log(newLength);
+
+// var lastElement = fruits.pop();
+
+// console.log('Tableau fruits après avoir supprimé le dernier élement : ' + fruits);
+// console.log('La taille finale du tableau : ' + fruits.length);
+// console.log(typeof fruits);
+// console.log('La valeur du dernier élement supprimé : ' + lastElement);
+
+// var fruits =["Apple", "Banana"];
+// console.log('Tableau fruits initial : ' + fruits);
+// //Ajouter à la fin du tableau
+// var newLength = fruits.push('Orange', 'Citron');
+
+
+// console.log('Tableau fruits ajout des deux éléments : ' + fruits);
+// // console.log(typeof fruits);
+// // console.log(newLength);
+
+// var lastElement = fruits.pop();
+
+// console.log('Tableau fruits après avoir supprimé le dernier élement : ' + fruits);
+// console.log('La taille finale du tableau : ' + fruits.length);
+// console.log(typeof fruits);
+// console.log('La valeur du dernier élement supprimé : ' + lastElement);
+
+var fruits =["Apple", "Banana"];
+console.log('Tableau fruits initial : ' + fruits);
+//Ajouter à la fin du tableau
+var newLength = fruits.push('Orange', 'Citron');
+
+
+console.log('Tableau fruits ajout des deux éléments : ' + fruits);
+console.log(typeof fruits);
+console.log(typeof newLength);
+console.log(newLength);
+
+var lastElement = fruits.pop();
+
+console.log('Tableau fruits après avoir supprimé le dernier élement : ' + fruits);
+console.log('La taille finale du tableau : ' + fruits.length);
+console.log(typeof lastElement);
+console.log('La valeur du dernier élement supprimé : ' + lastElement);
+
+var first = fruits.shift(); 
