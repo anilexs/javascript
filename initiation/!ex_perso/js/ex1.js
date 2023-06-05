@@ -147,22 +147,65 @@
 // console.log(typeof fruits);
 // console.log('La valeur du dernier élement supprimé : ' + lastElement);
 
-var fruits =["Apple", "Banana"];
-console.log('Tableau fruits initial : ' + fruits);
-//Ajouter à la fin du tableau
-var newLength = fruits.push('Orange', 'Citron');
+// var fruits =["Apple", "Banana"];
+// console.log('Tableau fruits initial : ' + fruits);
+// //Ajouter à la fin du tableau
+// var newLength = fruits.push('Orange', 'Citron');
 
 
-console.log('Tableau fruits ajout des deux éléments : ' + fruits);
-console.log(typeof fruits);
-console.log(typeof newLength);
-console.log(newLength);
+// console.log('Tableau fruits ajout des deux éléments : ' + fruits);
+// console.log(typeof fruits);
+// console.log(typeof newLength);
+// console.log(newLength);
 
-var lastElement = fruits.pop();
+// var lastElement = fruits.pop();
 
-console.log('Tableau fruits après avoir supprimé le dernier élement : ' + fruits);
-console.log('La taille finale du tableau : ' + fruits.length);
-console.log(typeof lastElement);
-console.log('La valeur du dernier élement supprimé : ' + lastElement);
+// console.log('Tableau fruits après avoir supprimé le dernier élement : ' + fruits);
+// console.log('La taille finale du tableau : ' + fruits.length);
+// console.log(typeof lastElement);
+// console.log('La valeur du dernier élement supprimé : ' + lastElement);
 
-var first = fruits.shift(); 
+// var first = fruits.shift(); 
+
+// EX 05/06/23
+
+// var string = prompt("", "prenon");
+// var number = prompt("", "age");
+// if ((Number(number)) && (isNaN(string))){
+    //     console.log(typeof string + "il devrais etre string");
+    //     console.log(typeof number + "il devrais etre number");
+    
+    // }else{
+        //     console.log("nan");
+        // }
+    function MyName (string, number){
+        var string = prompt("votre prenom ?", "prenom");
+        var number = prompt("votre age ?", "age");
+        number = parseInt(number);
+    if (Number(number) && isNaN(string)){
+    console.log(typeof string + "il devrais etre string");
+    console.log(typeof number + "il devrais etre number");
+    document.write("Je m'appelle " + string + " et j'ais  " + number + " ans");
+
+    }else{
+    console.log("nan");
+    document.write("navrais mais sais non !!! en 1 sais votre prenom et en 2 votre age");
+    }
+}
+MyName();
+
+// v2
+    var prenom = prompt("Saisir votre prénom :");
+var age = prompt("Saisir votre âge :");
+
+// console.log(prenom,age);
+
+//2- vérification des valeurs
+if (isNaN(prenom) && !isNaN(age)) {
+    affichagePrenomAge(prenom, age); 
+}
+
+function affichagePrenomAge(val1, val2) {
+    var result = "Je m'appelle " + val1 + "et j'ai " + val2 + "ans";
+    document.write(result);
+}
