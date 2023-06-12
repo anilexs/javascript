@@ -11,12 +11,21 @@
 // console.log(nombre1);
 // console.log(nombre2);
 
-var age = prompt("quelle et votre age ?", "19");
-while (age <=3 || age >= 120 || isNaN(age)){
-    age = prompt("quelle et votre age ?", "19");
+var nombre = prompt("Quel est votre âge?");
+
+while (nombre <= 3 || nombre>= 120 || (isNaN(nombre))) {
+  nombre = prompt("Quel est votre âge?");
 }
+
 var majoriteFR = 18;
-function afficheAge (number){
-    
+
+function afficheAge(agePersonne, ageAdulte){
+    if ((agePersonne > 3) && (agePersonne < ageAdulte)){
+      alert("Vous n'êtes pas encore majeur !")
+    }
+
+    if ((agePersonne >= ageAdulte) && (agePersonne <= 120)){
+      alert("Bienvenue, vous êtes majeur.")
+    }
 }
-afficheAge(age);
+afficheAge(nombre, majoriteFR);
